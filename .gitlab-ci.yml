@@ -58,10 +58,11 @@ test2:
   services:
     - docker:dind
   script:
+    - docker login -u $GITLAB_CI_USER -p $GITLAB_CI_PASSWORD $CI_REGISTRY
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
     - docker run $CI_REGISTRY_IMAGE:$IMAGE_TAG
-    - docker ps
+    - docker ps -a
     - echo "---------TEST DOCKER IMAGE---------"
 
 deploy to stage:
