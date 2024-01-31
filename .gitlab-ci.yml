@@ -9,6 +9,10 @@ stages:
 
 variables:
   IMAGE_TAG: $CI_COMMIT_BRANCH-$CI_COMMIT_SHORT_SHA
+  CI_DEBUG_TRACE: "true"
+
+include:
+  local: smoke.gitlab-ci.yml
 
 cache:
   key:
