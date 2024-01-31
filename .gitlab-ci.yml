@@ -12,8 +12,8 @@ variables:
   CI_DEBUG_TRACE: "true"
 
 include:
-  local: 'smoke.gitlab-ci.yml'
-  remote: 'https://gitlab.com/ci-cd5742805/cicd-templates/-/blob/main/lint-test-job.yml'
+  - local: 'smoke.gitlab-ci.yml'
+  - remote: 'https://gitlab.com/ci-cd5742805/cicd-templates/-/blob/main/lint-test-job.yml'
 
 cache:
   key:
