@@ -13,7 +13,7 @@ variables:
 
 include:
   - local: 'smoke.gitlab-ci.yml'
-  - remote: 'https://gitlab.com/ci-cd5742805/cicd-templates/-/blob/main/lint-test-job.yml'
+  - remote: 'https://gitlab.com/ci-cd5742805/cicd-templates/-/raw/main/lint-test-job.yml'
 
 cache:
   key:
